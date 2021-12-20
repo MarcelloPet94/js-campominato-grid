@@ -6,11 +6,28 @@
     color: #fff;
 }
 
+#selectorLevel
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    padding: 16px 0;
+    border: 1px solid #fff;
+}
+
+#selectorLevel select, #selectorLevel button
+{
+    padding: 8px 16px;
+    margin: 8px;
+
+}
+
 .container
 {
-    margin: 0 auto;
-    width: 69%; 
 
+    margin: 5% auto;
+    width: 69%; 
 }
 
 #widthGame
@@ -24,9 +41,16 @@
 
 .cellBox
 {
+    text-align: center;
+    line-height: 100px;
     width: 100px;
     height: 100px;
     border: 1px solid #fff;
+}
 
+.cellSelect
+{
+    background-color: #fff;
+    color: #010101;
 }
 

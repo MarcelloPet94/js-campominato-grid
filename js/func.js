@@ -2,14 +2,13 @@
 // DOM
 const widthGame = document.getElementById("widthGame");
 const a = document.getElementById("a");
+let cellBox = document.getElementsByClassName("cellBox");
 
 // LEVEL 
 let easyLev = 100;
 let mediumLev = 81;
 let hardLev = 49;
 
-let selectBox = document.querySelector(".cellBox");
- 
 
 // default grid 
 for(let i = 1; i <= 49; i++)
@@ -18,7 +17,18 @@ for(let i = 1; i <= 49; i++)
     `
     <div class="cellBox">${i}</div>
     `
+    
 }
+
+/*
+for(let index = 0; index <= cellBox.length; index++)
+{    
+    cellBox[index].addEventListener("click" , function()
+    {
+        this.classList.add("cellSelect");
+    });   
+}*/
+
 
 a.addEventListener('click' , function()
 {    
@@ -37,6 +47,7 @@ a.addEventListener('click' , function()
             <div class="cellBox">${i}</div>
             `
         }
+
     }
 
     else if(level === 'medium')
